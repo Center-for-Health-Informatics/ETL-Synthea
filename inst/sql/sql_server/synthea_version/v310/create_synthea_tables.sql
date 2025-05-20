@@ -292,7 +292,7 @@ create table @synthea_schema.payer_transitions (
 create table @synthea_schema.payers (
   id                       varchar(1000),
   "name"                     varchar(1000),
-  ownership                varchar NULL,
+  ownership                varchar (1000),
   address                  varchar(1000),
   city                     varchar(1000),
   state_headquartered      varchar(1000),
@@ -323,4 +323,3 @@ create table @synthea_schema.supplies (
   description  varchar(1000),
   quantity     numeric
 );
-
